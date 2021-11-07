@@ -1,0 +1,3 @@
+[submodule "vulcan-api"]
+	path = vulcan-api
+	url = git@github.com:filewalkwithme/vulcan-api.git
