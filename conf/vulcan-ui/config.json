@@ -1,0 +1,5 @@
+{
+  "api_url": "http://localhost:8081/api/v1/",
+  "ask_credentials": true,
+  "static_labels": ["issue", "potential", "compliance", "informational"]
+}
