@@ -1,5 +1,6 @@
 {
   "api_url": "http://localhost:8081/api/v1/",
+  "token_page_url": "http://localhost:8081/api/v1/home",
   "ask_credentials": true,
   "static_labels": ["issue", "potential", "compliance", "informational"],
   "teams_crud": true
