@@ -14,3 +14,7 @@
 	path = vulcan-ui
 	url = git@github.com:filewalkwithme/vulcan-ui.git
 	branch = filewalkwithme
+[submodule "vulcan-scan-engine"]
+	path = vulcan-scan-engine
+	url = git@github.com:filewalkwithme/vulcan-scan-engine.git
+	branch = filewalkwithme
