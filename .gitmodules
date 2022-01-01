@@ -1,6 +1,7 @@
 [submodule "vulnerability-db"]
 	path = vulnerability-db
 	url = git@github.com:filewalkwithme/vulnerability-db.git
+	branch = filewalkwithme
 [submodule "vulcan-api"]
 	path = vulcan-api
 	url = git@github.com:filewalkwithme/vulcan-api.git
@@ -12,3 +13,4 @@
 [submodule "vulcan-ui"]
 	path = vulcan-ui
 	url = git@github.com:filewalkwithme/vulcan-ui.git
+	branch = filewalkwithme
