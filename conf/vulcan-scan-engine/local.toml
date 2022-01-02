@@ -1,0 +1,42 @@
+[log]
+# log levels all, debug, error, info, warn
+level ="debug"
+
+[server]
+port = 8084
+
+[db]
+connection_string = "port=5434 user=vulcan password=vulcan sslmode=disable dbname=scan-enginedb"
+migrations_subdir ="db"
+
+[vulcan]
+schema = "https"
+host = "persistence.vulcan.com"
+
+[sqs]
+number_of_processors = 1
+log_messages = false
+polling_interval = 10
+wait_time = 20
+timeout = 30
+queue_arn = "arn:aws:sqs:us-east-1:999999999999:checks-creation-queue"
+endpoint = "http://localhost:4100"
+
+[scans_sns]
+topic_arn = "arn:aws:sns:us-east-1:999999999999:scans-notification-topic"
+endpoint = "http://localhost:4100"
+enabled = true
+
+[checks_sns]
+topic_arn = "arn:aws:sns:us-east-1:999999999999:checks-notification-topic"
+endpoint = "http://localhost:4100"
+enabled = true
+
+[check_creator]
+num_of_workers = 1
+# in seconds.
+period = 60
+
+[[queues]]
+[queues.default]
+arn = "arn:aws:sqs:us-east-1:999999999999:scan-engine-default-queue"

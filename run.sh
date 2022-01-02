@@ -3,6 +3,8 @@
 # exit on error
 set -e
 
+cp conf/vulcan-api/local-dev.toml vulcan-api/contrib/dev/local-dev.toml
+
 cd vulcan-api/contrib/dev
 
 ./setup-dependencies.sh
@@ -29,6 +31,8 @@ npm install
 npm run-script serve &
 
 cd -
+
+./run-vulcan-scan-engine.sh
 
 docker build -t vulcan-nginx .
 

@@ -15,6 +15,7 @@
 |nginx|8081|
 |vulnerability-db|-|
 |vulnerability-db-api|8083|
+|vulcan-scan-engine|8084|
 
 ## Architecture
 

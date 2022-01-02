@@ -1,0 +1,13 @@
+Local:
+  Host: localhost
+  Port: 4100
+  Region: us-east-1
+  AccountId: "999999999999"
+  LogToFile: false
+  LogFile: ./goaws_messages.log
+  Queues:
+    - Name: checks-creation-queue
+    - Name: scan-engine-default-queue
+  Topics:
+    - Name: scans-notification-topic
+    - Name: checks-notification-topic
