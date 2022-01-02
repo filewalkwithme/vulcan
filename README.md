@@ -6,6 +6,16 @@
 ./run.sh
 ```
 
+## Ports
+
+|Service|Port|
+|---|---|
+|vulcan-ui|1234|
+|vulcan-api|8080|
+|nginx|8081|
+|vulnerability-db|-|
+|vulnerability-db-api|8083|
+
 ## Architecture
 
 ```
