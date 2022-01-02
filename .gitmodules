@@ -18,3 +18,7 @@
 	path = vulcan-scan-engine
 	url = git@github.com:filewalkwithme/vulcan-scan-engine.git
 	branch = filewalkwithme
+[submodule "vulcan-persistence"]
+	path = vulcan-persistence
+	url = git@github.com:filewalkwithme/vulcan-persistence.git
+	branch = filewalkwithme
