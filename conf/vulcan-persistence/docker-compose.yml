@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+    dev:
+        container_name: vulcan_persistence_db
+        image: postgres:13.3-alpine
+        command: "postgres -c log_connections=true -c log_min_duration_statement=0"
+        ports:
+            - "5436:5432"
+        expose:
+            - "5436"
+        volumes:
+            - /var/lib/postgresql/data
+        healthcheck:
+            test: ["CMD-SHELL", "pg_isready -U vulcan-persistence-dev"]
+            interval: 10s
+            timeout: 5s
+            retries: 5
+        environment:
+            - POSTGRES_USER=vulcan-persistence-dev
+            - POSTGRES_PASSWORD=vulcan-persistence-dev
+            - POSTGRES_DB=vulcan-persistence-dev
