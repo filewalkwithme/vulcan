@@ -11,7 +11,7 @@ migrations_subdir ="db"
 
 [vulcan]
 schema = "https"
-host = "persistence.vulcan.com"
+host = "localhost:3000"
 
 [sqs]
 number_of_processors = 1

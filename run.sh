@@ -34,6 +34,8 @@ cd -
 
 ./run-vulcan-scan-engine.sh
 
+./run-vulcan-persistence.sh
+
 docker build -t vulcan-nginx .
 
 docker run -d --add-host=host.docker.internal:172.17.0.1 -p 8081:8081 --rm --name vulcan-nginx vulcan-nginx 
