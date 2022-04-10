@@ -1,5 +1,10 @@
 # vulcan
 
+## Cloning
+```
+git clone --recurse-submodules git@github.com:filewalkwithme/vulcan.git
+```
+
 ## How to run
 
 ```
