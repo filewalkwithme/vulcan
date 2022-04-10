@@ -10,7 +10,7 @@ connection_string = "port=5434 user=vulcan password=vulcan sslmode=disable dbnam
 migrations_subdir ="db"
 
 [vulcan]
-schema = "https"
+schema = "http"
 host = "localhost:3000"
 
 [sqs]
