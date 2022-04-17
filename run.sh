@@ -38,13 +38,13 @@ cd -
 
 docker build -t vulcan-nginx .
 
-docker run -d --add-host=host.docker.internal:172.17.0.1 -p 8081:8081 --rm --name vulcan-nginx vulcan-nginx 
+docker run -d --add-host=host.docker.internal:172.17.0.1 -p 8082:8082 --rm --name vulcan-nginx vulcan-nginx 
 
 echo "
 
 #########################################################################
 #
-#--> Initialization complete. Now access http://localhost:1234/index.html
+#--> Initialization complete. Now access http://localhost:8082/index.html
 #
 #########################################################################
 

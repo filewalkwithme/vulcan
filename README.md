@@ -13,7 +13,7 @@ git clone --recurse-submodules git@github.com:filewalkwithme/vulcan.git
 
 ## Ports
 
-|Service|Port|
+|Service|External Port|
 |---|---|
 |vulcan-ui|1234|
 |vulcan-api|8080|
@@ -21,6 +21,12 @@ git clone --recurse-submodules git@github.com:filewalkwithme/vulcan.git
 |vulnerability-db|-|
 |vulnerability-db-api|8083|
 |vulcan-scan-engine|8084|
+|vulcan-persistence (postgres)|5436|
+|vulcan-scan-engine (postgres)|5434|
+|goaws|4100|
+|vulnerability-db (postgres)|5438|
+|vulcan-api (postgres)|5432|
+|keycloak|8093|
 
 ## Architecture
 
